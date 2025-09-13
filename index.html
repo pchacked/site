@@ -18,14 +18,22 @@
   </font>
 </marquee>
 <center>
-  <br>
-  <input type="range">
-  <br>
-  <input type="range">
-  <br>
-  <input type="checkbox">
-  <br>
-  <input type="checkbox">
+  <input type="checkbx" id="darkmode"> Dark Mode
+
+  <style>
+    #darkmode:checked ~ .content {
+      background: #121212;
+      color: #f1f1f1
+    }
+  </style>
+  
+  <div class="content">
+    <marquee>
+  <font size="6" color="black">
+    This site is developed in Poland :)
+  </font>
+</marquee>
+  </div>
 </center>
 </body>
 </html>
