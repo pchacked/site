@@ -3,37 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>site</title>
+  <style>
+    /* domyślne kolory */
+    body {
+      background: white;
+      color: black;
+      text-align: center;
+    }
+
+    /* dark mode – gdy checkbox jest zaznaczony */
+    #darkmode:checked + .content {
+      background: #121212;
+      color: #f1f1f1;
+    }
+  </style>
 </head>
 <body>
 
-<center>
   <a href="https://www.youtube.com/watch?v=jjxx-VNaS5U">
     <img src="images/obraz.PNG" width="476" height="204" alt="video">
   </a>
-</center>
 
-<marquee>
-  <font size="6" color="red">
-    This site is developed in Poland :)
-  </font>
-</marquee>
-<center>
-  <input type="checkbx" id="darkmode"> Dark Mode
+  <marquee>
+    <font size="6" color="red">
+      This site is developed in Poland :)
+    </font>
+  </marquee>
 
-  <style>
-    #darkmode:checked ~ .content {
-      background: #121212;
-      color: #f1f1f1
-    }
-  </style>
-  
+  <!-- checkbox -->
+  <label>
+    <input type="checkbox" id="darkmode"> Dark Mode
+  </label>
+
+  <!-- zawartość, której kolory się zmieniają -->
   <div class="content">
     <marquee>
-  <font size="6" color="black">
-    This site is developed in Poland :)
-  </font>
-</marquee>
+      <font size="6" color="black">
+        This site is developed in Poland :)
+      </font>
+    </marquee>
   </div>
-</center>
+
 </body>
 </html>
