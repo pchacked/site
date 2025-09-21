@@ -1,0 +1,15 @@
+style.css
+/* Domyślnie jasny */
+body {
+  background: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Gdy checkbox zaznaczony – zmiana kolorów */
+#darkmode:checked ~ .content {
+  background: #121212;
+  color: #f1f1f1;
+}
